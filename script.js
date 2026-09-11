@@ -7,55 +7,91 @@ const products = [
         id: 1,
         name: 'Netflix Premium',
         emoji: '🎬',
-        price: 'Rp 49.000',
-        priceValue: 49000,
+        originalPrice: 'Rp 30.000',
+        price: 'Rp 25.000',
+        priceValue: 25000,
         description: 'Akses unlimited film dan series tanpa batas',
-        badge: 'Paling Populer'
+        badge: 'Diskon 17%'
     },
     {
         id: 2,
         name: 'Spotify Premium',
         emoji: '🎵',
-        price: 'Rp 39.000',
-        priceValue: 39000,
+        originalPrice: 'Rp 35.000',
+        price: 'Rp 20.000',
+        priceValue: 20000,
         description: 'Streaming musik tanpa iklan, unlimited',
-        badge: 'Favorit'
+        badge: 'Diskon 43%'
     },
     {
         id: 3,
         name: 'Canva Pro',
         emoji: '🎨',
-        price: 'Rp 45.000',
-        priceValue: 45000,
+        originalPrice: 'Rp 35.000',
+        price: 'Rp 20.000',
+        priceValue: 20000,
         description: 'Template desain profesional unlimited',
-        badge: 'Best Seller'
+        badge: 'Diskon 43%'
     },
     {
         id: 4,
         name: 'CapCut Pro',
         emoji: '🎥',
-        price: 'Rp 35.000',
-        priceValue: 35000,
+        originalPrice: 'Rp 25.000',
+        price: 'Rp 20.000',
+        priceValue: 20000,
         description: 'Edit video dengan efek profesional',
-        badge: 'Tren'
+        badge: 'Diskon 20%'
     },
     {
         id: 5,
         name: 'ChatGPT Plus',
         emoji: '🤖',
-        price: 'Rp 99.000',
-        priceValue: 99000,
+        originalPrice: 'Rp 45.000',
+        price: 'Rp 30.000',
+        priceValue: 30000,
         description: 'AI assistant dengan respons lebih cepat',
-        badge: 'Premium'
+        badge: 'Diskon 33%'
     },
     {
         id: 6,
-        name: 'Adobe Lightroom',
-        emoji: '📸',
-        price: 'Rp 55.000',
-        priceValue: 55000,
-        description: 'Edit foto profesional dengan cloud sync',
-        badge: 'New'
+        name: 'YouTube Premium',
+        emoji: '📺',
+        originalPrice: 'Rp 25.000',
+        price: 'Rp 20.000',
+        priceValue: 20000,
+        description: 'Tononton tanpa iklan, offline mode',
+        badge: 'Diskon 20%'
+    },
+    {
+        id: 7,
+        name: 'Disney+ Hotstar',
+        emoji: '🎭',
+        originalPrice: 'Rp 30.000',
+        price: 'Rp 25.000',
+        priceValue: 25000,
+        description: 'Film, series, olahraga live unlimited',
+        badge: 'Diskon 17%'
+    },
+    {
+        id: 8,
+        name: 'HBO Max',
+        emoji: '🎞️',
+        originalPrice: 'Rp 30.000',
+        price: 'Rp 25.000',
+        priceValue: 25000,
+        description: 'Series dan film eksklusif premium',
+        badge: 'Diskon 17%'
+    },
+    {
+        id: 9,
+        name: 'Alight Motion Pro',
+        emoji: '✨',
+        originalPrice: 'Rp 35.000',
+        price: 'Rp 25.000',
+        priceValue: 25000,
+        description: 'Editor video dengan efek animasi canggih',
+        badge: 'Diskon 29%'
     }
 ];
 
@@ -71,7 +107,10 @@ function loadProducts() {
             <h3>${product.name}</h3>
             <div class="badge">${product.badge}</div>
             <p>${product.description}</p>
-            <div class="product-price">${product.price}</div>
+            <div class="product-price">
+                <span class="original-price">${product.originalPrice}</span>
+                <span class="promo-price">${product.price}</span>
+            </div>
             <button class="btn-beli" onclick="buyViaWhatsApp('${product.name}', '${product.price}')">💬 Beli via WhatsApp</button>
         </div>
     `).join('');
