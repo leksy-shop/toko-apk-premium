@@ -1,5 +1,5 @@
 // Nomor WhatsApp Anda (ganti dengan nomor Anda, format: 62812345678)
-const WHATSAPP_NUMBER = '6281234567890'; // Ganti dengan nomor Anda
+const WHATSAPP_NUMBER = '6283125991869'; // Ganti dengan nomor Anda
 
 // Data Produk
 const products = [
