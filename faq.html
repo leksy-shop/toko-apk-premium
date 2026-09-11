@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Toko APK Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faq-container {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            user-select: none;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            opacity: 0.9;
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            color: #555;
+            display: none;
+            line-height: 1.8;
+            border-top: 1px solid #eee;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .faq-answer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🎬 Toko APK Premium</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="cara-order.html">Cara Order</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2 style="text-align: center; font-size: 2rem; margin: 2rem 0;">❓ Pertanyaan yang Sering Diajukan</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Apa itu Toko APK Premium?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Toko APK Premium adalah toko digital yang menyediakan akun premium untuk aplikasi-aplikasi populer seperti Netflix, Spotify, Canva Pro, CapCut Pro, dan ChatGPT Plus dengan harga yang lebih terjangkau dibanding membeli langsung.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Apakah akun yang diberikan legal dan aman?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ya, semua akun yang kami jual adalah akun resmi yang dibeli langsung dari penyedia layanan. Kami tidak melakukan crack atau modifikasi ilegal. Akun Anda dijamin aman dan dapat digunakan sesuai dengan kebijakan platform masing-masing.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Berapa lama akun bisa digunakan?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Durasi akun tergantung paket yang Anda pilih. Umumnya, akun dapat digunakan selama 1 bulan hingga 1 tahun. Detail durasi akan dijelaskan saat Anda melakukan pemesanan. Kami juga menyediakan layanan perpanjangan akun.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Bagaimana cara membayar?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Kami menerima berbagai metode pembayaran termasuk:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Transfer Bank (BCA, Mandiri, BNI, dll)</li>
+                            <li>E-Wallet (OVO, GCash, Dana, dll)</li>
+                            <li>Metode pembayaran lainnya sesuai kesepakatan</li>
+                        </ul>
+                        Hubungi kami via WhatsApp untuk mendapatkan informasi rekening.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Berapa lama proses verifikasi dan pengiriman akun?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Setelah pembayaran dikonfirmasi, kami biasanya mengirimkan akun premium Anda dalam waktu 5-15 menit. Untuk kasus tertentu, mungkin membutuhkan waktu hingga 1 jam. Kami akan terus memberikan update melalui WhatsApp.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Bisa berganti password akun tidak?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Tentu bisa! Anda dapat mengubah password akun setelah menerimanya. Kami menyediakan panduan lengkap cara mengubah password di setiap aplikasi. Perubahan password tidak akan mempengaruhi masa berlaku akun premium Anda.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Apakah akun bisa digunakan di berbagai perangkat?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ya, akun dapat digunakan di berbagai perangkat sesuai dengan kebijakan masing-masing aplikasi. Sebagian besar aplikasi mengizinkan login di 2-4 perangkat secara bersamaan. Untuk detail lebih lengkap, tanyakan saat melakukan pemesanan.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Apa jika akun bermasalah atau tidak bisa diakses?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Jangan khawatir! Kami memberikan garansi 100% kepuasan pelanggan. Jika ada masalah dengan akun, hubungi kami via WhatsApp dan kami akan segera memberikan solusi atau penggantian akun tanpa biaya tambahan.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Apakah ada diskon atau promo untuk pembelian lebih banyak?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ada! Kami sering memberikan promo dan diskon khusus untuk pembelian dalam jumlah banyak atau bundling paket. Hubungi kami via WhatsApp untuk mengetahui penawaran terbaru dan dapatkan harga spesial.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Bagaimana jika saya ingin refund atau membatalkan pesanan?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Kebijakan refund kami adalah sebagai berikut:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Refund dapat dilakukan sebelum akun diaktifkan</li>
+                            <li>Jika akun sudah diaktifkan, refund dapat dilakukan dalam 24 jam pertama dengan syarat dan ketentuan tertentu</li>
+                            <li>Hubungi kami segera jika ingin membatalkan pesanan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Bagaimana cara menghubungi customer service?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Hubungi kami melalui WhatsApp dengan klik tombol "Beli via WhatsApp" atau hubungi langsung nomor WhatsApp kami. Kami siap membantu Anda setiap hari, jam operasional: 08:00 - 22:00 WIB. Respon cepat dan ramah customer service kami siap melayani pertanyaan Anda! 😊
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Toko APK Premium. Hubungi kami via WhatsApp untuk pertanyaan lebih lanjut.</p>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.closest('.faq-item');
+            faqItem.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
